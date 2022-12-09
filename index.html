@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Animated Login Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="img">
+            <img src="img/phone.svg">
+        </div>
+        <div class="login-content">
+            <form class="needs-validation form" novalidate>
+                <img src="img/avatar.svg">
+                <h2 class="title flash">Welcome</h2>
+                <div class="input-div one focus">
+                    <div class="i">
+                        <i class="fas fa-user">
+                        </i>
+                    </div>
+                    <div>
+                        <h5>Card Number</h5>
+                        <input id="validationCustomUsername" class="input" type="text" pattern="[0-9\s]{13,19}"
+                            maxlength="19" aria-describedby="inputGroupPrepend" required
+                            placeholder="xxxx xxxx xxxx xxxx">
+                        <div class="invalid-feedback">
+                            User Name has to be completed.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="input-div two focus">
+                    <div class="i">
+                        <i class="fas fa-user">
+                        </i>
+                    </div>
+                    <div>
+                        <h5>Card Holder</h5>
+                        <input class="input" id="validationCustomPassword" type="text" minlength="5" maxlength="15"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Card Holder has to be fullfield.
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="fieldset-expiration">
+                    <label for="card-expiration-month">Expiration date</label>
+                    <div class="select">
+                        <select id="card-expiration-year">
+                            <option></option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select id="card-expiration-month">
+                            <option></option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+                <div class="input-div two focus">
+                    <div class="i">
+                        <i class="fas fa-lock">
+                        </i>
+                    </div>
+                    <div>
+                        <h5>CVV</h5>
+                        <input class="input" id="validationCustomPassword" type="password" minlength="3" maxlength="3"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            CVV has to be 3 numbers long.
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="subscribeNewsLetter">
+                    <label class="form-check-label" for="subscribeNewsLetter">
+                        Save your credit card details.
+                    </label>
+
+                </div>
+                <div class="form-group">
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+
+                </div>
+
+                <input type="submit" class="btn" value="Pay">
+            </form>
+        </div>
+
+</body>
+
+</html>
