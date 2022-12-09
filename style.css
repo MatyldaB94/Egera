@@ -88,6 +88,10 @@ body {
     text-align: center;
 }
 
+.fieldset-expiration {
+    font-weight: bold;
+}
+
 .login-content img {
     height: 100px;
 }
